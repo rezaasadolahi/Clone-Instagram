@@ -1,0 +1,169 @@
+#form-file-upload {
+  width: 520px;
+  height: 500px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 2% auto;
+}
+
+#input-file-upload {
+  display: none;
+  opacity: 0.4;
+}
+
+#label-file-upload {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  bottom: 16px;
+
+  #lengthMediaDot-and-openMediaGallery {
+    width: 100%;
+    height: 39px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 0;
+    margin-right: 10px;
+
+    ul {
+      width: 100%;
+      height: auto;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+      margin-right: 2%;
+
+      .dot-length-black {
+        width: 8px;
+        height: 8px;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-left: 7px;
+      }
+
+      .dot-length-blue {
+        width: 8px;
+        height: 8px;
+        background-color: rgb(0, 153, 255);
+        border: 1px solid rgb(0, 153, 255);
+        border-radius: 50%;
+        margin-left: 7px;
+      }
+    }
+
+    #open_media_gallery {
+      width: 35px;
+      height: 35px;
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+      background-color: #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 160px;
+    background-color: rgba(255, 0, 0, 0)(255, 255, 255);
+    position: absolute;
+    top: 7.2em;
+    left: 0;
+  }
+}
+
+#label-file-upload.drag-active {
+  background-color: #ebebeb;
+}
+
+
+/* ///////////////////// */
+
+#list-images-detail {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Carousel {
+  width: 520px;
+  height: 500px;
+  background-color: rgb(130, 129, 129);
+  position: relative;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+    object-fit: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #ArrowBack {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 6;
+    fill: #ffffff;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background-color: rgba(26, 26, 26, .8);
+    box-shadow: 0 4px 12pxrgba(0, 0, 0, .15);
+    cursor: pointer;
+    opacity: 1;
+    transition: all .2s ease;
+    padding: 7px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  #ArrowForward {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 6;
+    fill: #ffffff;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background-color: rgba(26, 26, 26, .8);
+    box-shadow: 0 4px 12pxrgba(0, 0, 0, .15);
+    cursor: pointer;
+    opacity: 1;
+    transition: all .2s ease;
+    padding: 7px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

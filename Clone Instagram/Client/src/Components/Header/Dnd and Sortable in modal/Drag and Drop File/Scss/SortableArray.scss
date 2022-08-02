@@ -1,0 +1,53 @@
+    #Li-Gallery {
+        width: 450px;
+        height: max-content;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: absolute;
+        overflow: scroll hidden;
+        left: 4em;
+        bottom: 2.3em;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        background-color: black;
+
+        &:first-of-type {
+            padding: 0 0 0 14em;
+        }
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 18px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            border: 1px solid rgb(47, 3, 56);
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(42, 21, 37);
+        }
+
+        img {
+            border: 1px solid rgb(170, 0, 255);
+            width: 287px;
+            height: 60px;
+            max-width: 90px;
+            display: inline-block;
+            border-radius: 4px;
+            cursor: move;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+            font-size: large;
+            box-shadow: 0 0 1px 1px rgba(216, 201, 231, 0.271);
+            background-color: rgba(217, 0, 255, 0.205);
+            color: rgb(130, 5, 158);
+        }
+    }

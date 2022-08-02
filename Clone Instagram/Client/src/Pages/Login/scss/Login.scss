@@ -1,0 +1,246 @@
+#Login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    #main-login {
+        position: relative;
+        bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #box-login {
+            width: 400px;
+            height: 400px;
+            background-color: #ffffff;
+            border: 1px solid #4240406a;
+            margin: 0 0 14px 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>img {
+                margin-top: 2.1em;
+            }
+
+            #username {
+                position: relative;
+                inset: 0;
+
+                &::before {
+                    content: attr(aria-label);
+                    width: max-content;
+                    height: max-content;
+                    z-index: 5;
+                    position: absolute;
+                    inset: 0;
+                    top: -2em;
+                    left: -8.75em;
+                    color: #0000009d;
+                    background-color: transparent;
+                    padding: 0;
+                    margin: 0;
+                    cursor: text;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            #password {
+                position: relative;
+                inset: 0;
+
+                &::before {
+                    content: attr(aria-label);
+                    width: fit-content;
+                    height: fit-content;
+                    z-index: 5;
+                    position: absolute;
+                    inset: 0;
+                    top: -2em;
+                    left: -8.75em;
+                    color: #0000009d;
+                    background-color: transparent;
+                    padding: 0;
+                    margin: 0;
+                    cursor: text;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            input:first-of-type {
+                margin-top: 2em;
+                width: 300px;
+                height: 45px;
+                outline: none;
+                border-radius: 4px;
+                text-indent: 5px;
+                border: 1px solid #3a3c3c39;
+                background-color: #FAFAFA;
+                position: relative;
+
+                &:not(:placeholder-shown)+label::before {
+                    transform: translate(-1.8em, -1em) scale(0.7);
+                    background-color: transparent !important;
+                }
+            }
+
+            input {
+                margin-top: 0.5em;
+                width: 300px;
+                height: 40px;
+                outline: none;
+                border-radius: 4px;
+                text-indent: 5px;
+                border: 1px solid #3a3c3c39;
+                background-color: #FAFAFA;
+                position: relative;
+                text-transform: lowercase;
+
+                &:focus {
+                    border: 1px solid #3a3c3c;
+                }
+
+                &:last-of-type:not(:placeholder-shown)+label::before {
+                    transform: translate(-1.0em, -0.8em) scale(0.7);
+                    background-color: transparent;
+                }
+            }
+
+            #show_Hide_Password {
+                position: absolute;
+                top: 11.2em;
+                right: 3.60em;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            #btnlogin {
+                width: 300px;
+                height: 34px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin-top: 1em;
+                background-color: #0095F6;
+                color: #ffffff;
+
+                &:active {
+                    background-color: #0094f6c8;
+                }
+
+                &:disabled {
+                    background-color: #0094f682;
+                }
+            }
+
+            hr {
+                width: 77%;
+                height: 1px;
+                margin-top: 1.8em;
+            }
+
+            #or {
+                position: absolute;
+                top: 22em;
+                width: auto;
+                height: auto;
+                background-color: #ffffff;
+                padding: 0 1.7em;
+                user-select: none;
+                font-size: 0.8em;
+            }
+
+            #facebook {
+                text-align: center;
+                cursor: pointer;
+                margin-top: 1.4em;
+                color: #385185;
+                user-select: none;
+
+                &:active {
+                    color: #2f4679bf;
+                }
+
+                #icon-facebook {
+                    margin: 5px 5px 0 0;
+                }
+            }
+
+            #forgetPass {
+                margin-top: 1em;
+                cursor: pointer;
+                font-size: 0.9em;
+                user-select: none;
+
+                &:active {
+                    color: #0094f6b5;
+                }
+            }
+        }
+
+        #box-GotoSignup {
+            width: 400px;
+            height: 78px;
+            background-color: #ffffff;
+            border: 1px solid #4240406a;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            overflow: hidden;
+            margin: 0 0 14px 0;
+
+            span {
+                cursor: pointer;
+                font-weight: bold;
+                color: #0095f6;
+
+                &:active {
+                    color: #0094f6b6;
+                }
+            }
+        }
+
+        #box-DownloadApp {
+            width: 400px;
+            height: 83px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            overflow: hidden;
+            margin: 0 0 25px 0;
+            position: relative;
+            top: 15px;
+
+
+            div {
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

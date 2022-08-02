@@ -1,0 +1,235 @@
+#Profile {
+    width: 100%;
+    height: 97vh;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #fafafa;
+    position: relative;
+    inset: 0;
+
+
+    #manage-all-profile {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-color: #fafafa;
+        position: relative;
+        inset: 0;
+
+        #picPro-otherDetail-Header {
+            width: 50%;
+            height: max-content;
+            display: flex;
+            flex-flow: row nowrap;
+            // background-color: rgb(102, 255, 0);
+
+            #box1 {
+                height: auto;
+                overflow: hidden;
+                flex-basis: 50%;
+                padding: 0;
+                margin: 0;
+                
+                #picture {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+                    outline: none;
+                    background-size: cover;
+                    object-fit: cover;
+                    background-position: 0;
+                    cursor: pointer;
+                }
+            }
+
+            #box2 {
+                height: 18em;
+                overflow: hidden;
+                flex-basis: 100%;
+                // background-color: rgba(208, 0, 255, 0.689);
+                display: flex;
+                flex-flow: column nowrap;
+                box-sizing: border-box;
+
+                #idPage-EditProfile-Setting {
+                    width: 52%;
+                    height: auto;
+                    // background-color: rgba(255, 255, 0, 0.795);
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    margin-top: 5%;
+
+                    p {
+                        transform: translate(0, 5px);
+                        font-size: 20px;
+                        font-weight: 400;
+                        box-sizing: border-box;
+                        line-height: 0;
+                        letter-spacing: 0.8px;
+                        margin-right: 10px;
+                        text-transform: lowercase;
+                        padding: 0 !important;
+                        user-select: none;
+                    }
+
+                    button {
+                        border: 1px solid #292626b1;
+                        border-radius: 5px;
+                        width: auto;
+                        transform: translatex(0px) translatey(0px);
+                        height: 28px;
+                        background-color: transparent;
+                        outline: none;
+                        cursor: pointer;
+                        margin-left: 15px;
+                        overflow: hidden;
+                        user-select: none;
+
+                        &:hover {
+                            background-color: #f0f2f36f;
+                        }
+                    }
+
+                    #setting {
+                        font-size: 23px;
+                        cursor: pointer;
+                        margin-left: 17px;
+                        fill: #000000;
+                    }
+                }
+
+                #posts-followers-following {
+                    width: 20em;
+                    height: max-content;
+                    // background-color: rgba(255, 255, 0, 0.795);
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    margin-top: 5%;
+                    font-weight: bold;
+                    user-select: none;
+
+                    #posts,
+                    #followers,
+                    #following {
+                        cursor: pointer;
+
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+
+                    #posts {
+                        cursor: default;
+                    }
+                }
+
+                #biography {
+                    width: 424px;
+                    min-height: 161px;
+                    // background-color: rgb(114, 220, 250);
+                    margin-top: 5%;
+                    overflow: hidden auto;
+                    display: inline !important;
+                    user-select: none;
+
+                    p {
+                        margin: 0 0 7px 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        hr {
+            width: 70%;
+            height: 1px;
+        }
+
+        #posts-saved-tagged {
+            width: 50%;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+
+            input[type='radio']:checked+label {
+                color: #000000;
+                border-top: 2px solid #000000;
+            }
+
+            label {
+                margin-right: 5em;
+                font-size: 14px;
+                color: rgb(142, 142, 142);
+                cursor: pointer;
+                padding-top: 20px;
+                transform: translate(0, -16px);
+                user-select: none;
+            }
+
+            #icon-post,
+            #icon-save,
+            #icon-tagge {
+                margin-right: 9px;
+            }
+        }
+
+
+        #content-below-label {
+            width: 100%;
+            height: max-content;
+            // background-color: rgb(209, 209, 209);
+
+            #manage-all-content {
+                width: 70%;
+                height: inherit;
+                margin: 0 auto;
+                // background-color: #000000;
+
+
+                #content-posts {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    display: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #content-save {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    display: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #content-tagged {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    display: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
